@@ -8,6 +8,7 @@ import (
 )
 
 var (
+	// taken from https://github.com/docker/docker/blob/master/pkg/namesgenerator/names-generator.go
 	left = [...]string{
 		"admiring",
 		"adoring",
