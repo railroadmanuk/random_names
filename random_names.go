@@ -590,7 +590,7 @@ var loops = flag.Int("loops",10,"number of records to generate")
 var sleepLen = flag.Int("sleepLen",10,"length to sleep between iterations in ms")
 
 func main(){
-	flag.Parse()
+  flag.Parse()
   for i := 0; i < *loops; i++ {
     t := time.Now().Format("2006-01-02T15:04:05.999999999Z07:00")
     r := rand.New(rand.NewSource(time.Now().UnixNano()))
